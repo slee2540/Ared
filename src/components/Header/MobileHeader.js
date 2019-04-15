@@ -22,7 +22,7 @@ class MobileHeader extends Component {
     const { selectedMenu } = this.state;
     const { clickMenu } = this;
     return (
-      <div>
+      <div onClick={clickMenu}>
         <div>About</div>
         <div onClick={() => this.selectCategory("service")}>Service</div>
         {selectedMenu === "service" ? (

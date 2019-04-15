@@ -514,6 +514,24 @@
   float: 1;
 }
 
+.linkItemArea {
+  float: right;
+  display: flex;
+  flex-direction: row;
+}
+
+.linkItem {
+  padding: 1.7rem 2rem;
+  font-size: 1.2rem;
+  float: left;
+  position: relative;
+  cursor: pointer;
+}
+
+.linkItem:hover {
+  color: white;
+}
+
 @media screen and (max-width: 896px) {
   .mobileWrapper {
     display: flex;
