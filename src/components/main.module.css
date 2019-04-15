@@ -1,0 +1,542 @@
+.content {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.wrapper {
+  background-color: #11151a;
+  color: white;
+  overflow-x: hidden;
+  /* overflow: visible; */
+}
+
+.contentWrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+.headerWrapper {
+  display: flex;
+  flex-direction: row;
+  height: 10vh;
+}
+
+.headerLayout1 {
+  flex: 1;
+  align-items: center;
+  padding-top: 2rem;
+  padding-left: 3rem;
+  width: 9rem;
+  flex-shrink: 0;
+}
+
+.headerLogo {
+  height: 4rem;
+}
+
+.headerLayout2 {
+  flex: 10;
+  justify-content: flex-end;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-right: 5rem;
+}
+
+.menuContent {
+  width: 100%;
+  font-size: 20px;
+  text-align: center;
+  padding: 2rem 5rem;
+  cursor: pointer;
+  color: #605f5d;
+  font-family: "Nanum Gothic";
+  font-weight: 700;
+}
+
+.menuContentHover:hover {
+  color: #e9e9e9;
+}
+
+.aboutBtn {
+  padding: 0 5rem;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* 게시판 이동시 a태그 변경  */
+.linkStyle {
+  text-decoration: none;
+  /* color: #0080ff; */
+  font-family: "Nanum Gothic";
+  font-weight: 700;
+}
+
+.linkStyle2 {
+  text-decoration: none;
+  /* color: #0080ff; */
+  font-family: "Nanum Gothic";
+  font-weight: 700;
+}
+
+.menuWrapper {
+  display: flex;
+  font-size: 1.2rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 1rem;
+  color: #605f5d;
+}
+
+.dropdown1 {
+  /* width: 20rem;
+  right: -5rem; */
+
+  font-family: "Nanum Gothic";
+  font-weight: 700;
+}
+.dropdown2 {
+  /* width: 10rem;
+  right: 0rem; */
+
+  font-family: "Nanum Gothic";
+  font-weight: 700;
+}
+
+.menuPadding {
+  padding: 1rem;
+}
+
+.mainPage {
+  border: 0;
+  padding: 0;
+  background-image: url("/img/ARED_web_Main_BG.jpg");
+  height: 90vh;
+  background-position: center;
+  background-size: cover;
+}
+
+.mainText {
+  font-family: "Roboto", sans-serif !important;
+  height: inherit;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.mainTextSpace1 {
+  flex: 5;
+}
+
+.mainTextSpace2 {
+  flex: 1;
+  font-size: 4rem;
+  font-weight: 700;
+  padding-left: 10rem;
+  padding-bottom: 5rem;
+}
+
+.flexWrapper1 {
+  flex: 1;
+  /* background: red; */
+}
+
+.flexWrapper2 {
+  flex: 5;
+  padding: 10rem 0rem;
+  /* background: blue; */
+}
+
+.flexWrapper3 {
+  flex: 1;
+  /* background: green; */
+}
+
+/* notice */
+.noticeImage {
+  background-image: url("/img/ARED_bg_01.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.noticeWrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.noticeIntroWrapper {
+  flex: 10;
+  text-align: center;
+  /* padding: 10rem 0; */
+  padding-bottom: 5rem;
+}
+
+.noticIntroSubWrapper {
+  padding: 5rem 0;
+}
+.noticIntroText {
+  /* text-align: left; */
+  color: #8c8e90;
+  font-size: 1.71rem;
+}
+
+.noticeContentWrapper {
+  flex: 1;
+}
+
+.noticeIntro {
+  height: 10rem;
+  text-align: center;
+}
+
+.ulWrapper {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+}
+
+.title {
+  flex: 1;
+  font-size: 30px;
+  margin: 0;
+  padding: 0rem 0rem 3rem 0rem;
+}
+
+.titleMove {
+  flex: 1;
+  padding: 0rem 0rem 3rem 0rem;
+  text-align: right;
+}
+
+.titleMoveTo {
+  color: white;
+}
+
+.titleMoveImage {
+  height: 4rem;
+}
+
+.noticeContent {
+  flex: 1;
+  border-left: 0.5rem solid #007cff;
+  background: #15191f;
+  padding: 0 2rem;
+  margin: 0 2rem 0 0rem;
+}
+
+.noticeContent2 {
+  flex: 1;
+  border-left: 0.5rem solid #007cff;
+  background: #15191f;
+  padding: 0 2rem;
+  margin: 0 3rem 0 0rem;
+}
+
+.noticeTitle {
+  font-size: 20px;
+  padding: 1rem;
+  padding-bottom: 1rem;
+}
+
+.noticeSubTitle {
+  font-size: 12px;
+  padding: 1rem;
+  color: #8c8e90;
+  font-family: "Nanum Gothic";
+  font-weight: 700;
+}
+/* ExchangeSolution */
+.esRow {
+  display: flex;
+  flex-direction: row;
+  font-size: 3.14rem;
+  padding-bottom: 5rem;
+}
+
+.esTitle {
+  font-size: 3.14rem;
+  color: #007cff;
+}
+.esTitle2 {
+  color: #e9e9e9;
+}
+
+.esSubTitle {
+  color: #8c8e90;
+  font-family: "Nanum Gothic";
+  font-size: 1.29rem;
+  padding-bottom: 7rem;
+}
+
+.esFeature {
+  font-size: 2rem;
+  padding: 3rem 0rem 5rem 2rem;
+}
+
+.esFeatureWrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+.esFeatureUl {
+  flex: 1;
+  /* background: #15191f; */
+  padding: 0 2rem;
+  margin: 0 5rem 0 0rem;
+}
+
+.featureUl {
+  flex: 1;
+  background: #15191f;
+  padding: 0rem;
+  margin: 0 2rem;
+}
+
+.featureImage {
+  height: 12rem;
+  margin: auto;
+  padding-top: 3rem;
+}
+
+.featureImage2 {
+  height: 15rem;
+  margin: auto;
+  padding-top: 3rem;
+}
+
+.esFeatureTop {
+  text-align: center;
+  height: 12rem;
+}
+
+.esFeatureMiddle {
+  font-size: 1.71rem;
+  height: 6rem;
+  text-align: center;
+  padding: 1rem 0rem;
+  color: #e9e9e9;
+}
+
+.esFeatureBottom {
+  font-size: 1.1rem;
+  text-align: center;
+  padding: 1rem 0rem;
+  color: #8c8e90;
+  font-family: "Nanum Gothic";
+  padding-bottom: 3rem;
+}
+/* ForexSolution */
+.fsImage {
+  background-image: url("/img/ARED_bg_03.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.fsTitle {
+  font-size: 3.14rem;
+  color: #d52942;
+  /* padding-bottom: 3rem; */
+}
+
+.fsContent {
+  border-left: 0.2rem solid #d52942;
+  margin: 3rem 0rem;
+}
+
+.fsContentTitle {
+  font-size: 2.14rem;
+  padding: 2rem 2rem;
+  /* padding-bottom: 1rem; */
+}
+
+.fsContentSub {
+  font-size: 1.29rem;
+  padding-left: 2rem;
+  padding-bottom: 2rem;
+  color: #8c8e90;
+  font-family: "Nanum Gothic";
+}
+
+.webFeatureWrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+/* Web Platform */
+.webUlWrapper {
+  flex: 1;
+  /* background: #15191f; */
+  margin: 0 2rem;
+}
+
+.webUlWrapper2 {
+  flex: 1;
+  background: #15191f;
+  margin: 0 2rem;
+}
+
+.webTitle {
+  font-size: 3.14rem;
+  padding-bottom: 5rem;
+  /* padding-left: 2rem; */
+}
+
+.webFeatureTop {
+  text-align: center;
+  height: 20rem;
+  /* background: red; */
+}
+
+.webFeatureMiddle {
+  font-size: 2rem;
+  text-align: center;
+  padding: 3rem 0rem;
+  background-color: #15191e;
+}
+
+.webFeatureBottom {
+  font-size: 1.1rem;
+  text-align: center;
+  padding-bottom: 3rem;
+  color: #8c8e90;
+  font-family: "Nanum Gothic";
+  background-color: #15191e;
+  min-height: 7rem;
+}
+/* footer */
+.footerWrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+.logo {
+  height: 3rem;
+}
+
+.footerLogo {
+  flex: 1;
+  text-align: right;
+  margin-right: 3rem;
+  margin-top: 2rem;
+}
+
+.footerContent {
+  flex: 10;
+  border-left: 2px solid #2a2f31;
+  padding: 2rem 5rem;
+}
+
+.footerLink {
+  flex: 3;
+  display: flex;
+  flex-direction: row;
+  padding: 2rem;
+  margin: 0;
+  border-left: 2px solid #2a2f31;
+}
+
+.footerHeaderText {
+  font-size: 1rem;
+  color: #8c8e90;
+  padding-bottom: 1rem;
+}
+
+.footerBottomText {
+  font-size: 1rem;
+  color: #8c8e90;
+  padding-top: 2rem;
+}
+
+.footerLiText {
+  padding: 0.4rem 0rem;
+}
+
+.footerUl {
+  padding: 0;
+  margin: 0 0 0 2rem;
+}
+
+.footerWrapper {
+  display: flex;
+  flex-direction: row;
+  padding-top: 3rem;
+  /* justify-content: center;
+  align-items: center; */
+}
+
+.footerLayout1 {
+  flex: 1;
+}
+.footerLayout2 {
+  flex: 5;
+  padding: 2rem 0rem;
+  display: flex;
+  flex-direction: row;
+}
+
+.footerLogo {
+  height: 4rem;
+  /* margin: 0 */
+}
+
+.footerLayout3 {
+  flex: 1;
+}
+
+.footerSub1 {
+  flex: 1;
+  height: 4rem;
+}
+
+.footerSub2 {
+  border-left: 2px solid #2a2f31;
+  padding-left: 3rem;
+  color: #8c8e90;
+}
+
+.navigationArea {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  /* background-color: whitesmoke; */
+  background-color: #13161a;
+  z-index: 99;
+}
+
+.burger {
+  /* fill: red; */
+  margin-right: 2rem;
+  margin-top: 2rem;
+}
+@media screen and (max-width: 896px) {
+  .mobileWrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .mainTextSpace2 {
+    font-size: 2rem;
+    padding-left: 3rem;
+    padding-bottom: 5rem;
+  }
+
+  .esRow {
+    flex-direction: column;
+  }
+  .esFeatureWrapper {
+    flex-direction: column;
+  }
+  .webFeatureWrapper {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .headerLogo {
+    height: 3rem;
+  }
+  .footerLogo {
+    height: 2rem;
+  }
+}

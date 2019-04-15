@@ -1,0 +1,132 @@
+.wrapper {
+  height: 100%;
+  overflow: auto;
+}
+
+.tableHeader {
+  display: flex;
+  padding-left: 1.5rem;
+  /* margin-bottom: 0.5rem; */
+  color: #8c8e90;
+}
+
+.tableHeader li {
+  height: 2rem;
+  line-height: 2rem;
+  flex-shrink: 0;
+  word-break: break-all;
+}
+
+.tableHeader li:last-child {
+  padding-right:1.5rem;
+}
+
+.notBoradStyle{
+  display: flex;
+  cursor: normal;
+}
+
+.notBoradStyle li {
+  line-height: 2rem;
+  flex-shrink: 0;
+  font-weight: 700;
+  word-break: break-all;
+}
+
+.notBoradStyle li:last-child {
+  padding-right:1.5rem;
+}
+
+.tableContent {
+  display: flex;
+  /* font-weight: 700; */
+}
+
+.tableContent:hover {
+  cursor: pointer;
+}
+
+/* .tableContent:hover li {
+  background-color: #15181C;
+} */
+
+.tableContent li {
+  line-height: 2rem;
+  flex-shrink: 0;
+  word-break: break-all;
+  /* font-weight: normal; */
+  color: #656A6D;
+  /* font-weight: 700; */
+}
+
+.tableContent li:first-child:hover {
+  text-decoration: underline;
+}
+
+.tableContent li:last-child {
+  padding-right:1.5rem;
+}
+
+.rowHeader{
+  padding: 10px 0px 10px 20px;
+  border: 2px solid transparent;
+  border-top: 0.1rem #2d3136;
+  border-bottom:0.1rem #2d3136;
+  border-style: solid;
+  background-color: #15181C;
+}
+
+.row {
+  padding: 10px 0px 10px 20px;
+  border: 1px solid transparent;
+  border-bottom:1px #2d3136;
+  border-style: solid;
+}
+
+.active {
+  border-bottom: 2px solid transparent;
+}
+
+.active li{
+  color: #C3C2BE;
+  /* font-weight: bold !important; */
+  /* text-decoration: underline; */
+}
+
+.content {
+  width: 100%;
+  display: inline-block;
+  background-color: #171B20;
+  border-bottom:1px solid #373B40;
+  cursor: default;
+  user-select: text;
+}
+
+.contentRow{
+  margin: 20px 20px 20px 20px;
+  display: block;
+}
+
+.answer {
+  margin: 20px 20px 20px 20px;
+  background: #15181C;
+}
+
+.paginationWrapper{
+  width: 100%;
+  padding: 1rem 0;
+  margin: 1rem auto;
+  text-align: center;
+  vertical-align: center;
+}
+
+@media screen and (max-width: 896px) {
+  
+  .row:first-child {
+    padding: 10px 0px 10px 20px;
+    border: 1px solid transparent;
+    border-top:1px #2d3136;
+    /* border-bottom:1px #2d3136; */
+    border-style: solid;
+  }
+}
