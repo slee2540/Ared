@@ -152,8 +152,8 @@ class Header extends Component {
           <IoMdMenu size={"3rem"} onClick={clickMenu} className={css.burger} />
         </div>
         {isShowNavigation ? (
-          <div className={css.navigationArea} onClick={clickMenu}>
-            <MobileHeader />
+          <div className={css.navigationArea}>
+            <MobileHeader onClick={clickMenu} />
           </div>
         ) : null}
       </div>
