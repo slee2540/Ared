@@ -11,7 +11,6 @@
 }
 
 .selectedItem {
-  /* width: 100%; */
   padding: 1.5rem;
   text-align: left;
   border-left: 0.4rem solid #0080ff;
@@ -19,7 +18,6 @@
 }
 
 .unselectedItem {
-  /* width: 100%; */
   margin-left: 0.75rem;
   padding: 1.5rem;
   text-align: left;
@@ -32,16 +30,14 @@
 
 @media screen and (max-width: 896px) {
   .wrapper {
-    /* min-height: 3rem; */
     min-width: 1rem;
     max-width: none;
     overflow: hidden;
+    padding-top: 5rem;
   }
 
   .selectedItem {
     display: inline-block;
-    /* padding: 0.3rem; */
-    /* padding-right: 0.5rem; */
     text-align: left;
     border-left: none;
     border-bottom: 0.25rem solid #0080ff;

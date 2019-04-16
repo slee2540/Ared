@@ -49,67 +49,82 @@ class App extends Component {
     this.setState({ pageView: type });
   };
 
+  home = isDisplay => {
+    const { pageView, isMobile } = this.state;
+    const { selectedView } = this;
+
+    return (
+      <div
+        className={css.wrapper}
+        style={
+          isDisplay === false ? { visibility: "hidden", height: "0" } : null
+        }
+      >
+        <Header
+          ref={this.choosePage}
+          pageView={pageView}
+          isMobile={isMobile}
+          selectedView={selectedView}
+        />
+        <MainPage />
+        <section>
+          <Element name="Notice" className="element" />
+          <div className={cx(css.content, css.noticeImage)}>
+            <Notice isMobile={isMobile} />
+          </div>
+        </section>
+        <section>
+          <Element name="ExchangeSolution" className="element" />
+          <div className={css.content}>
+            <ExchangeSolution isMobile={isMobile} />
+          </div>
+        </section>
+        <section>
+          <Element name="ForexSolution" className="element" />
+          <div className={cx(css.content, css.fsImage)}>
+            <ForexSolution />
+          </div>
+        </section>
+        <section>
+          <Element name="WebPlatform" className="element" />
+          <div className={css.content}>
+            <WebPlatform />
+          </div>
+        </section>
+        <Footer />
+      </div>
+    );
+  };
+
   render() {
     const { pageView, isMobile } = this.state;
     const { selectedView } = this;
 
-    // console.log(pageView);
-
     if (pageView === "home") {
+      return this.home(true);
+    } else if (pageView === "notice")
       return (
-        <div className={css.wrapper}>
-          {/* 헤더에 버튼클릭시 콜백함수 호출*/}
-          <Header
+        <>
+          {this.home(false)}
+          <NoticePage
             ref={this.choosePage}
             pageView={pageView}
             isMobile={isMobile}
             selectedView={selectedView}
           />
-          <MainPage />
-          <section>
-            <Element name="Notice" className="element" />
-            <div className={cx(css.content, css.noticeImage)}>
-              <Notice />
-            </div>
-          </section>
-          <section>
-            <Element name="ExchangeSolution" className="element" />
-            <div className={css.content}>
-              <ExchangeSolution />
-            </div>
-          </section>
-          <section>
-            <Element name="ForexSolution" className="element" />
-            <div className={cx(css.content, css.fsImage)}>
-              <ForexSolution />
-            </div>
-          </section>
-          <section>
-            <Element name="WebPlatform" className="element" />
-            <div className={css.content}>
-              <WebPlatform />
-            </div>
-          </section>
-          <Footer />
-        </div>
-      );
-    } else if (pageView === "notice")
-      return (
-        <NoticePage
-          ref={this.choosePage}
-          pageView={pageView}
-          isMobile={isMobile}
-          selectedView={selectedView}
-        />
+        </>
       );
     else if (pageView === "contacts")
       return (
-        <ContactsPage
-          ref={this.choosePage}
-          pageView={pageView}
-          isMobile={isMobile}
-          selectedView={selectedView}
-        />
+        <>
+          {this.home(false)}
+          <ContactsPage
+            ref={this.choosePage}
+            pageView={pageView}
+            isMobile={isMobile}
+            selectedView={selectedView}
+          />
+        </>
       );
   }
 }

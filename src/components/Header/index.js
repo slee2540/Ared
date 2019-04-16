@@ -22,6 +22,13 @@ class Header extends Component {
     selectedView(id);
   };
 
+  clickMenu = () => {
+    const { isShowNavigation } = this.state;
+    this.setState({
+      isShowNavigation: !isShowNavigation
+    });
+  };
+
   front_pc = () => {
     return (
       <div className={css.headerWrapper}>
@@ -128,32 +135,32 @@ class Header extends Component {
     );
   };
 
-  clickMenu = () => {
-    const { isShowNavigation } = this.state;
-    this.setState({
-      isShowNavigation: !isShowNavigation
-    });
-  };
-
   front_mobile = () => {
     const { clickMenu } = this;
     const { isShowNavigation } = this.state;
+    const { selectedView, pageView } = this.props;
 
     return (
       <div className={css.headerWrapper}>
         <div className={css.headerLayout1}>
-          <img
-            className={css.headerLogo}
-            src={`/img/ARED-LOGO-temp.png`}
-            alt="ARED-LOGO"
-          />
+          <div onClick={() => this.onChangeClick("home")}>
+            <img
+              className={css.headerLogo}
+              src={`/img/ARED-LOGO-temp.png`}
+              alt="ARED-LOGO"
+            />
+          </div>
         </div>
         <div className={css.mobileNavigation}>
           <IoMdMenu size={"3rem"} onClick={clickMenu} className={css.burger} />
         </div>
         {isShowNavigation ? (
           <div className={css.navigationArea}>
-            <MobileHeader onClick={clickMenu} />
+            <MobileHeader
+              outsideClick={clickMenu}
+              selectedView={selectedView}
+              pageView={pageView}
+            />
           </div>
         ) : null}
       </div>

@@ -41,7 +41,41 @@ class Contacts extends Component {
                   {"Contacts"}
                 </h1>
               </div>
-              <div className={css.rightSide} />
+              <div className={css.rightSide}>
+                <div className={css.contactsWrapper}>
+                  <div className={css.map}>
+                    <div className={css.mapWrapper}>
+                      <img
+                        className={css.mapImage}
+                        src={`/img/map.png`}
+                        alt="icon_01"
+                      />
+                    </div>
+                  </div>
+                  <div className={css.contacts}>
+                    <div className={css.contactContainer}>
+                      <div className={css.contactImage}>
+                        <GiHouse size={"1.5rem"} />
+                      </div>
+                      <div className={css.contactText}>
+                        서울특별시 강남구 언주로 527
+                      </div>
+                    </div>
+                    <div className={css.contactContainer}>
+                      <div className={css.contactImage}>
+                        <IoIosMail size={"1.5rem"} />
+                      </div>
+                      <div className={css.contactText}>support@theared.com</div>
+                    </div>
+                    <div className={css.contactContainer}>
+                      <div className={css.contactImage}>
+                        <FaPhone size={"1.5rem"} />
+                      </div>
+                      <div className={css.contactText}>02-2028-3720</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
           <div className={css.headerflex3} />

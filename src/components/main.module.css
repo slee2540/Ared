@@ -18,20 +18,25 @@
 .headerWrapper {
   display: flex;
   flex-direction: row;
-  height: 10vh;
+  width: 100%;
+  height: 5rem;
+  position: fixed;
+  background-color: #11151a;
+  z-index: 999;
 }
 
 .headerLayout1 {
   flex: 1;
-  align-items: center;
-  padding-top: 2rem;
+  /* align-items: center; */
+  padding-top: 1rem;
   padding-left: 3rem;
   width: 9rem;
   flex-shrink: 0;
 }
 
 .headerLogo {
-  height: 4rem;
+  height: 3rem;
+  cursor: pointer;
 }
 
 .headerLayout2 {
@@ -47,7 +52,7 @@
   width: 100%;
   font-size: 20px;
   text-align: center;
-  padding: 2rem 5rem;
+  padding: 1rem 5rem;
   cursor: pointer;
   color: #605f5d;
   font-family: "Nanum Gothic";
@@ -77,6 +82,11 @@
   /* color: #0080ff; */
   font-family: "Nanum Gothic";
   font-weight: 700;
+}
+
+.linkWidth {
+  width: 100%;
+  flex-direction: column;
 }
 
 .menuWrapper {
@@ -112,7 +122,7 @@
   border: 0;
   padding: 0;
   background-image: url("/img/ARED_web_Main_BG.jpg");
-  height: 90vh;
+  height: 100vh;
   background-position: center;
   background-size: cover;
 }
@@ -131,7 +141,7 @@
 
 .mainTextSpace2 {
   flex: 1;
-  font-size: 4rem;
+  font-size: 2rem;
   font-weight: 700;
   padding-left: 10rem;
   padding-bottom: 5rem;
@@ -175,12 +185,20 @@
 .noticIntroSubWrapper {
   padding: 5rem 0;
 }
+
 .noticIntroText {
-  /* text-align: left; */
+  text-align: center;
   color: #8c8e90;
   font-size: 1.71rem;
+  word-break: keep-all;
 }
 
+.noticIntroText2 {
+  text-align: left;
+  color: #8c8e90;
+  font-size: 1.3rem;
+  word-break: keep-all;
+}
 .noticeContentWrapper {
   flex: 1;
 }
@@ -267,6 +285,7 @@
   font-family: "Nanum Gothic";
   font-size: 1.29rem;
   padding-bottom: 7rem;
+  word-break: keep-all;
 }
 
 .esFeature {
@@ -288,9 +307,12 @@
 
 .featureUl {
   flex: 1;
-  background: #15191f;
   padding: 0rem;
-  margin: 0 2rem;
+  margin: 0 1rem;
+}
+
+.featureUlSub {
+  padding: 1rem;
 }
 
 .featureImage {
@@ -308,23 +330,26 @@
 .esFeatureTop {
   text-align: center;
   height: 12rem;
+  background: #15191f;
 }
 
 .esFeatureMiddle {
   font-size: 1.71rem;
   height: 6rem;
+  padding: 1rem 2rem;
   text-align: center;
-  padding: 1rem 0rem;
   color: #e9e9e9;
+  background: #15191f;
 }
 
 .esFeatureBottom {
   font-size: 1.1rem;
+  padding: 1rem 2rem;
+  min-height: 12rem;
   text-align: center;
-  padding: 1rem 0rem;
   color: #8c8e90;
   font-family: "Nanum Gothic";
-  padding-bottom: 3rem;
+  background: #15191f;
 }
 /* ForexSolution */
 .fsImage {
@@ -366,20 +391,12 @@
 /* Web Platform */
 .webUlWrapper {
   flex: 1;
-  /* background: #15191f; */
-  margin: 0 2rem;
-}
-
-.webUlWrapper2 {
-  flex: 1;
-  background: #15191f;
-  margin: 0 2rem;
+  margin: 0 1rem;
 }
 
 .webTitle {
   font-size: 3.14rem;
   padding-bottom: 5rem;
-  /* padding-left: 2rem; */
 }
 
 .webFeatureTop {
@@ -391,18 +408,18 @@
 .webFeatureMiddle {
   font-size: 2rem;
   text-align: center;
-  padding: 3rem 0rem;
+  padding: 3rem 2rem;
   background-color: #15191e;
 }
 
 .webFeatureBottom {
   font-size: 1.1rem;
+  min-height: 7rem;
+  padding: 1rem 2rem;
   text-align: center;
-  padding-bottom: 3rem;
   color: #8c8e90;
   font-family: "Nanum Gothic";
   background-color: #15191e;
-  min-height: 7rem;
 }
 /* footer */
 .footerWrapper {
@@ -497,9 +514,9 @@
 
 .navigationArea {
   width: 100%;
-  height: 100%;
+  height: 100vh;
   position: absolute;
-  margin-top: 10vh;
+  margin-top: 5rem;
   background-color: #13161a;
   z-index: 99;
 }
@@ -508,40 +525,97 @@
   /* fill: red; */
   margin-right: 2rem;
   margin-top: 2rem;
+  cursor: pointer;
 }
 
-.navigationArea {
-  float: 1;
+.linkItemArea li {
+  border: 1px solid #2d3136;
+  border-bottom: none;
+  border-right: none;
+  border-left: none;
 }
 
-.linkItemArea {
-  float: right;
-  display: flex;
-  flex-direction: row;
+.linkItemArea li:last-child {
+  border-bottom: 1px solid #2d3136;
 }
 
 .linkItem {
-  padding: 1.7rem 2rem;
-  font-size: 1.2rem;
-  float: left;
-  position: relative;
+  padding: 1.5rem 2rem;
+  font-size: 1.1rem;
   cursor: pointer;
 }
 
 .linkItem:hover {
-  color: white;
+  color: #e9e9e9;
+}
+
+.subLinkItem {
+  padding: 1.5rem 5rem;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.subLinkItem:hover {
+  color: #e9e9e9;
+}
+
+.textItem {
+  padding: 1.7rem 2rem;
+  font-size: 1.1rem;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 896px) {
   .mobileWrapper {
     display: flex;
     flex-direction: column;
+    /* padding: 10vh 0rem; */
   }
 
+  .mobileHeaderWrapper {
+    height: 100%;
+    padding: 3rem;
+    color: #605f5d;
+  }
+
+  .headerLayout1 {
+    padding: 1rem;
+  }
+
+  .headerLogo {
+    height: 3rem;
+  }
+
+  .flexWrapper2 {
+    flex: 5;
+    padding: 10vh 0rem;
+  }
+
+  .footerLogo {
+    height: 2rem;
+  }
+
+  .burger {
+    height: 3rem;
+    margin-right: 1rem;
+    margin-top: 1rem;
+  }
+
+  .noticeIntro {
+    height: 7rem;
+    text-align: center;
+  }
+
+  /* .noticIntroText {
+    color: #8c8e90;
+    font-size: 1.3rem;
+    word-break: keep-all;
+  } */
+
   .mainTextSpace2 {
-    font-size: 2rem;
+    font-size: 1rem;
     padding-left: 3rem;
-    padding-bottom: 5rem;
+    padding-bottom: 6rem;
   }
 
   .esRow {
@@ -550,16 +624,32 @@
   .esFeatureWrapper {
     flex-direction: column;
   }
+  .featureUl {
+    margin: 0;
+  }
   .webFeatureWrapper {
     flex-direction: column;
   }
-}
 
-@media screen and (max-width: 500px) {
-  .headerLogo {
-    height: 3rem;
+  .flexWrapper1 {
+    flex: 0;
+    flex-basis: 1rem;
   }
-  .footerLogo {
-    height: 2rem;
+
+  .flexWrapper2 {
+    flex: 15;
+    padding: 10vh 0rem;
+  }
+
+  .flexWrapper3 {
+    flex: 0;
+    flex-basis: 1rem;
+  }
+  .esFeatureBottom {
+    margin-bottom: 2rem;
+  }
+
+  .esSubTitle {
+    padding-bottom: 3rem;
   }
 }

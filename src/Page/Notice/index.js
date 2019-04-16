@@ -305,6 +305,7 @@ class Notice extends Component {
             />
           ) : null}
         </div>
+        <Footer />
       </div>
     );
   };
