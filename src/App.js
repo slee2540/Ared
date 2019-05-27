@@ -2,16 +2,16 @@ import React, { Component } from "react";
 import { Element } from "react-scroll";
 import cx from "classnames";
 // import { BrowserRouter as Router, Route } from "react-router-dom";
-
 import Header from "./components/Header";
 import MainPage from "./components/MainPage";
-import Notice from "./components/Notice";
+import About from "./components/About";
 import ExchangeSolution from "./components/ExchangeSolution";
 import ForexSolution from "./components/ForexSolution";
 import WebPlatform from "./components/WebPlatform";
 import Footer from "./components/Footer";
-import NoticePage from "./Page/Notice";
-import ContactsPage from "./Page/Contacts";
+import Contact from "./components/Contact";
+// import NoticePage from "./Page/Notice";
+// import ContactsPage from "./Page/Contacts";
 import css from "./components/main.module.css";
 
 class App extends Component {
@@ -66,11 +66,16 @@ class App extends Component {
           isMobile={isMobile}
           selectedView={selectedView}
         />
-        <MainPage />
         <section>
-          <Element name="Notice" className="element" />
+          <div className={cx(css.content)}>
+            <MainPage />
+          </div>
+        </section>
+
+        <section>
+          <Element name="About" className="element" />
           <div className={cx(css.content, css.noticeImage)}>
-            <Notice isMobile={isMobile} />
+            <About isMobile={isMobile} />
           </div>
         </section>
         <section>
@@ -81,7 +86,7 @@ class App extends Component {
         </section>
         <section>
           <Element name="ForexSolution" className="element" />
-          <div className={cx(css.content, css.fsImage)}>
+          <div className={cx(css.content)}>
             <ForexSolution />
           </div>
         </section>
@@ -91,41 +96,50 @@ class App extends Component {
             <WebPlatform />
           </div>
         </section>
+        {/* <section>
+          <Element name="Contact" className="element" />
+          <div className={css.content}>
+            <Contact />
+          </div>
+        </section> */}
         <Footer />
       </div>
     );
   };
 
   render() {
-    const { pageView, isMobile } = this.state;
-    const { selectedView } = this;
+    return this.home(true);
 
-    if (pageView === "home") {
-      return this.home(true);
-    } else if (pageView === "notice")
-      return (
-        <>
-          {this.home(false)}
-          <NoticePage
-            ref={this.choosePage}
-            pageView={pageView}
-            isMobile={isMobile}
-            selectedView={selectedView}
-          />
-        </>
-      );
-    else if (pageView === "contacts")
-      return (
-        <>
-          {this.home(false)}
-          <ContactsPage
-            ref={this.choosePage}
-            pageView={pageView}
-            isMobile={isMobile}
-            selectedView={selectedView}
-          />
-        </>
-      );
+    // const { pageView, isMobile } = this.state;
+    // const { selectedView } = this;
+
+    // if (pageView === "home") {
+    //   return this.home(true);
+    // }
+    // else if (pageView === "notice")
+    //   return (
+    //     <>
+    //       {this.home(false)}
+    //       <NoticePage
+    //         ref={this.choosePage}
+    //         pageView={pageView}
+    //         isMobile={isMobile}
+    //         selectedView={selectedView}
+    //       />
+    //     </>
+    //   );
+    // else if (pageView === "contacts")
+    //   return (
+    //     <>
+    //       {this.home(false)}
+    //       <ContactsPage
+    //         ref={this.choosePage}
+    //         pageView={pageView}
+    //         isMobile={isMobile}
+    //         selectedView={selectedView}
+    //       />
+    //     </>
+    //   );
   }
 }
 

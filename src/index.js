@@ -5,8 +5,8 @@ import App from "./App";
 import * as serviceWorker from "./serviceWorker";
 
 import "./css/style.css";
-import "./css/calendar/style.css"; // main style file
-import "./css/calendar/default.css"; // theme css file
+// import "./css/calendar/style.css"; // main style file
+// import "./css/calendar/default.css"; // theme css file
 
 ReactDOM.render(<App />, document.getElementById("root"));
 

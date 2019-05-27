@@ -1,0 +1,58 @@
+/* ForexSolution */
+.fsTitle {
+  font-size: 3.14rem;
+  color: #d52942;
+  text-align: center;
+  /* padding-bottom: 3rem; */
+}
+
+.fsContentWrapper {
+  padding: 0rem 30rem;
+}
+
+.fsContent {
+  width: 800px;
+  border-left: 0.2rem solid #d52942;
+  margin: 3rem 0rem;
+}
+
+.fsContentTitle {
+  font-size: 2.14rem;
+  padding: 1rem 2rem;
+  color: #333333;
+  /* padding-bottom: 1rem; */
+}
+
+.fsContentSub {
+  font-size: 1.29rem;
+  padding-left: 2rem;
+  padding-bottom: 1rem;
+  color: #8c8e90;
+  font-family: "Nanum Gothic";
+}
+
+.fsContentLast {
+  font-size: 1rem;
+  padding-left: 2rem;
+  line-height: 250%;
+  color: #8c8e90;
+  font-family: "Nanum Gothic";
+}
+
+.webFeatureWrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+@media screen and (max-width: 896px) {
+  .fsContentWrapper {
+    padding: 1rem;
+  }
+
+  .fsContent {
+    width: auto;
+    border-left: 0.2rem solid #d52942;
+    word-break: keep-all;
+    /* margin: 3rem 0rem; */
+  }
+}

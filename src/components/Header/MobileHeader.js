@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import { Link } from "react-scroll";
+import cx from "classnames";
 import css from "../main.module.css";
+
 // import { IoMdMenu } from "react-icons/io"; //burger모양 작업
 
 class MobileHeader extends Component {
@@ -19,25 +21,36 @@ class MobileHeader extends Component {
     return (
       <div onClick={outsideClick} className={css.mobileHeaderWrapper}>
         <ul className={css.linkItemArea}>
-          <li className={css.linkItem}>
-            <Link
-              activeClass="active"
-              to="Notice"
-              spy={true}
-              smooth={true}
-              duration={500}
-            >
-              <div onClick={() => this.onChangeClick("home")}>About</div>
-            </Link>
-          </li>
-        </ul>
-        <ul className={css.linkItemArea}>
-          <li
-            className={css.linkItem}
-            onClick={() => this.onChangeClick("home")}
+          <Link
+            activeClass="active"
+            to="Notice"
+            spy={true}
+            smooth={true}
+            duration={500}
+            className={css.linkWidth}
           >
-            Service
-          </li>
+            <li
+              className={css.linkItem}
+              onClick={() => this.onChangeClick("home")}
+            >
+              About
+            </li>
+          </Link>
+          <Link
+            activeClass="active"
+            to="ExchangeSolution"
+            spy={true}
+            smooth={true}
+            duration={500}
+            className={css.linkWidth}
+          >
+            <li
+              className={css.linkItem}
+              onClick={() => this.onChangeClick("home")}
+            >
+              Service
+            </li>
+          </Link>
           <Link
             activeClass="active"
             to="ExchangeSolution"
@@ -83,8 +96,6 @@ class MobileHeader extends Component {
               Web Platform
             </li>
           </Link>
-        </ul>
-        <ul className={css.linkItemArea}>
           <li
             className={css.linkItem}
             onClick={() => this.onChangeClick("notice")}
@@ -98,12 +109,18 @@ class MobileHeader extends Component {
             Notice
           </li>
           <li
-            className={css.subLinkItem}
+            className={cx(css.subLinkItem, css.linkItemAreaLastLi)}
             onClick={() => this.onChangeClick("contacts")}
           >
             Contacts
           </li>
         </ul>
+        {/* <ul className={css.linkItemArea}>
+          
+        </ul>
+        <ul className={css.linkItemArea}>
+          
+        </ul> */}
       </div>
     );
   }

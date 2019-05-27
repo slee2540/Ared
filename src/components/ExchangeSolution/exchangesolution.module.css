@@ -1,0 +1,92 @@
+/* ExchangeSolution */
+
+.esTitleWrapper {
+  text-align: center;
+}
+
+.esTitle {
+  font-size: 3.14rem;
+  color: #007cff;
+  padding-bottom: 3rem;
+}
+.esTitle2 {
+  font-size: 2rem;
+  color: #e9e9e9;
+  padding-bottom: 2rem;
+}
+
+.esSubTitle {
+  color: #8c8e90;
+  font-family: "Nanum Gothic";
+  font-size: 1.29rem;
+  padding-bottom: 2rem;
+  word-break: keep-all;
+  line-height: 250%;
+}
+
+.esFeature {
+  text-align: center;
+  font-size: 2rem;
+  padding: 2rem 0;
+  /* padding: 3rem 0rem 5rem 2rem; */
+}
+
+.esFeatureWrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+.esFeatureUl {
+  flex: 1;
+  /* background: #15191f; */
+  padding: 0 2rem;
+  margin: 0 5rem 0 0rem;
+}
+
+.featureUl {
+  flex: 1;
+  padding: 0rem;
+  margin: 0 3rem;
+}
+
+.featureUlSub {
+  padding: 1rem;
+}
+
+.featureImage {
+  /* height: 12rem; */
+  height: 15rem;
+  /* width: 100%; */
+  /* padding-top: 3rem; */
+}
+
+.esFeatureTop {
+  text-align: center;
+  height: 15rem;
+  /* background: #15191f; */
+}
+
+.esFeatureMiddle {
+  font-size: 1.71rem;
+  height: 6rem;
+  padding: 1rem 2rem;
+  text-align: center;
+  color: #e9e9e9;
+  /* background: #15191f; */
+}
+
+.esFeatureBottom {
+  font-size: 1.1rem;
+  padding: 1rem 2rem;
+  min-height: 12rem;
+  text-align: center;
+  color: #8c8e90;
+  font-family: "Nanum Gothic";
+  /* background: #15191f; */
+}
+
+@media screen and (max-width: 896px) {
+  .esFeatureWrapper {
+    flex-direction: column;
+  }
+}

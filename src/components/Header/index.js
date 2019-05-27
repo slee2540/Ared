@@ -1,9 +1,9 @@
 import React, { Component } from "react";
-import cx from "classnames";
+// import cx from "classnames";
 import { Link } from "react-scroll";
 // import { Link as Move } from "react-router-dom";
 import { IoMdMenu } from "react-icons/io"; //burger모양 작업
-import Dropdown from "../Dropdown/index";
+// import Dropdown from "../Dropdown/index";
 import css from "../main.module.css";
 import MobileHeader from "./MobileHeader";
 
@@ -33,103 +33,111 @@ class Header extends Component {
     return (
       <div className={css.headerWrapper}>
         <div className={css.headerLayout1}>
-          <div onClick={() => this.onChangeClick("home")}>
-            <img
-              className={css.headerLogo}
-              src={`/img/ARED-LOGO-temp.png`}
-              alt="ARED-LOGO"
-            />
-          </div>
+          <img
+            className={css.headerLogo}
+            src={`/img/ARED-LOGO-temp.png`}
+            alt="ARED-LOGO"
+            onClick={() => this.onChangeClick("home")}
+          />
         </div>
+
         <div className={css.headerLayout2}>
-          <div className={css.aboutBtn}>
+          <div className={css.headerBtn}>
             <Link
               activeClass="active"
-              to="Notice"
+              to="Home"
               spy={true}
               smooth={true}
               duration={500}
             >
-              <div onClick={() => this.onChangeClick("home")}>About</div>
+              <div
+                onClick={() => this.onChangeClick("home")}
+                className={css.headerFont}
+              >
+                HOME
+              </div>
             </Link>
           </div>
-          <Dropdown ref={this.dropdown} childrenClassName={css.dropdown1}>
-            <div
-              className={cx(css.menuContent, css.menuContentHover)}
-              onClick={() => this.onChangeClick("home")}
+          <div className={css.headerBtn}>
+            <Link
+              activeClass="active"
+              to="About"
+              spy={true}
+              smooth={true}
+              duration={500}
             >
-              Service
-            </div>
-            <div className={css.menuWrapper}>
-              <div className={css.menuPadding}>
-                <Link
-                  activeClass="active"
-                  to="ExchangeSolution"
-                  spy={true}
-                  smooth={true}
-                  duration={500}
-                >
-                  <div onClick={() => this.onChangeClick("home")}>
-                    Exchange Solution
-                  </div>
-                </Link>
-              </div>
               <div
-                className={css.menuPadding}
                 onClick={() => this.onChangeClick("home")}
+                className={css.headerFont}
               >
-                <Link
-                  activeClass="active"
-                  to="ForexSolution"
-                  spy={true}
-                  smooth={true}
-                  duration={500}
-                >
-                  <div onClick={() => this.onChangeClick("home")}>
-                    Forex Solution
-                  </div>
-                </Link>
+                ABOUT US
               </div>
-              <div
-                className={css.menuPadding}
-                onClick={() => this.onChangeClick("home")}
-              >
-                <Link
-                  activeClass="active"
-                  to="WebPlatform"
-                  spy={true}
-                  smooth={true}
-                  duration={500}
-                >
-                  <div onClick={() => this.onChangeClick("home")}>
-                    Web Platform
-                  </div>
-                </Link>
-              </div>
-            </div>
-          </Dropdown>
-          <Dropdown ref={this.dropdown} childrenClassName={css.dropdown2}>
-            <div
-              className={cx(css.menuContent, css.menuContentHover)}
-              onClick={() => this.onChangeClick("notice")}
+            </Link>
+          </div>
+          <div className={css.headerBtn}>
+            <Link
+              activeClass="active"
+              to="ExchangeSolution"
+              spy={true}
+              smooth={true}
+              duration={500}
             >
-              Support
-            </div>
-            <div className={css.menuWrapper}>
               <div
-                className={cx(css.menuPadding, css.menuContentHover)}
-                onClick={() => this.onChangeClick("notice")}
+                onClick={() => this.onChangeClick("home")}
+                className={css.headerFont}
               >
-                Notice
+                EXCHANGE SOLUTION
               </div>
+            </Link>
+          </div>
+          <div className={css.headerBtn}>
+            <Link
+              activeClass="active"
+              to="ForexSolution"
+              spy={true}
+              smooth={true}
+              duration={500}
+            >
               <div
-                className={cx(css.menuPadding, css.menuContentHover)}
-                onClick={() => this.onChangeClick("contacts")}
+                onClick={() => this.onChangeClick("home")}
+                className={css.headerFont}
               >
-                Contacts
+                FOREX SOLUTION
               </div>
-            </div>
-          </Dropdown>
+            </Link>
+          </div>
+          <div className={css.headerBtn}>
+            <Link
+              activeClass="active"
+              to="WebPlatform"
+              spy={true}
+              smooth={true}
+              duration={500}
+            >
+              <div
+                onClick={() => this.onChangeClick("home")}
+                className={css.headerFont}
+              >
+                WEB PLATFORM
+              </div>
+            </Link>
+          </div>
+          <div className={css.headerBtn}>
+            <Link
+              activeClass="active"
+              to="Contact"
+              spy={true}
+              smooth={true}
+              duration={500}
+            >
+              <div
+                onClick={() => this.onChangeClick("home")}
+                className={css.headerFont}
+              >
+                CONTACT
+              </div>
+            </Link>
+          </div>
         </div>
       </div>
     );

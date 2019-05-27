@@ -1,0 +1,95 @@
+/* About */
+.aboutWrapper {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  word-break: keep-all;
+}
+
+.aboutTitle {
+  color: #333333;
+  /* font-size: 6rem; */
+  font-size: 3rem;
+  font-weight: bold;
+  padding: 7rem 0;
+}
+
+.aboutSubTitle {
+  color: #333333;
+  /* padding: 5rem 0; */
+  padding-bottom: 7rem;
+}
+
+.aboutSubTitleUpper {
+  display: inline-block;
+  font-size: 4rem;
+  padding-left: 1rem;
+}
+
+.aboutSubTitleLower {
+  display: inline-block;
+  font-size: 2rem;
+}
+
+.aboutFeatureWrapper {
+  display: flex;
+  flex-direction: row;
+  /* justify-content: center; */
+}
+
+.aboutfeatureUl {
+  flex: 1;
+  /* flex-basis: 25rem; */
+  margin: 0 3rem;
+}
+
+.aboutFeatureTop {
+  position: relative;
+  text-align: center;
+}
+
+.aboutFeatureMiddle {
+  font-size: 1.5rem;
+  line-height: 250%;
+  padding: 2rem 0rem;
+  text-align: center;
+  font-family: "Nanum Gothic";
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #333333;
+  word-break: keep-all;
+}
+
+.aboutImage {
+  /* height: 15rem; */
+  height: 100%;
+  width: 100%;
+}
+
+.aboutText {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2rem;
+  color: white;
+  z-index: 2;
+  text-align: center;
+}
+
+@media screen and (max-width: 896px) {
+  .aboutFeatureWrapper {
+    flex-direction: column;
+  }
+
+  .aboutTitle {
+    font-size: 3rem;
+  }
+
+  .aboutSubTitleUpper {
+    font-size: 2rem;
+  }
+  .aboutSubTitleLower {
+    font-size: 1rem;
+  }
+}

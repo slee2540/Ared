@@ -13,6 +13,7 @@
     "react-dom": "^16.8.6",
     "react-html-parser": "^2.0.2",
     "react-icons": "^3.5.0",
+    "react-naver-maps": "^0.0.13",
     "react-onclickoutside": "^6.8.0",
     "react-router-dom": "^5.0.0",
     "react-scripts": "2.1.8",

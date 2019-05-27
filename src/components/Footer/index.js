@@ -15,8 +15,9 @@ class Header extends Component {
             />
           </div>
           <div className={css.footerSub2}>
-            <div>
-              서울특별시 강남구 언주로 527
+            (c) ARED All Right Reserved.
+            {/* <div>
+              서울특별시 강남구 삼성동 143-6 영창빌딩 4층
               <br />
               <br />
             </div>
@@ -30,7 +31,7 @@ class Header extends Component {
               <br />
               <br />
             </div>
-            <div />
+            <div /> */}
           </div>
         </div>
         <div className={css.footerLayout3} />
