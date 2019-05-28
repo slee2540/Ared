@@ -39,7 +39,7 @@ class ForexSolution extends Component {
                 > Meta Trader 환경 설정을 포함한 고객 맞춤형 셋팅
               </li>
               <li className={css.fsContentLast}>
-                > FX 비즈니스를 영위하기 위하여 필수적인 Liquidty를 지속적으로
+                > FX 비즈니스를 영위하기 위하여 필수적인 Liquidity를 지속적으로
                 제공받을 수 있도록 LP 주선 및 협상 대행
               </li>
             </ul>

@@ -30,36 +30,20 @@ class Header extends Component {
   };
 
   refreshHome = () => {
-    // const { selectedView } = this.props;
-    // selectedView("test");
-    window.location.reload(false);
-    // this.forceUpdate();
-    // const { selectedView } = this.props;
-    // selectedView("support");
-    // selectedView("home");
-    // this.setState({ isShowNavigation: false });
-    // console.log(this.props);
-    // this.props.history.push(`/`);
+    // eslint-disable-next-line no-self-assign
+    window.location.href = window.location.href;
   };
 
   front_pc = () => {
     return (
       <div className={css.headerWrapper}>
         <div className={css.headerLayout1}>
-          <Link
-            activeClass="active"
-            to="Home"
-            spy={true}
-            smooth={true}
-            duration={500}
-          >
-            <img
-              className={css.headerLogo}
-              src={`/img/ARED-LOGO-temp.png`}
-              alt="ARED-LOGO"
-              // onClick={() => this.refreshHome()}
-            />
-          </Link>
+          <img
+            className={css.headerLogo}
+            src={`/img/ARED-LOGO-temp.png`}
+            alt="ARED-LOGO"
+            onClick={() => this.refreshHome()}
+          />
         </div>
 
         <div className={css.headerLayout2}>
@@ -172,27 +156,12 @@ class Header extends Component {
     return (
       <div className={css.headerWrapper}>
         <div className={css.headerLayout1}>
-          {/* <div onClick={() => window.location.reload()}> */}
-          <Link
-            activeClass="active"
-            to="Home"
-            spy={true}
-            smooth={true}
-            duration={500}
-          >
-            <img
-              className={css.headerLogo}
-              src={`/img/ARED-LOGO-temp.png`}
-              alt="ARED-LOGO"
-              // onClick={() => this.refreshHome()}
-            />
-          </Link>
-          {/* <img
-              className={css.headerLogo}
-              src={`/img/ARED-LOGO-temp.png`}
-              alt="ARED-LOGO"
-            /> */}
-          {/* </div> */}
+          <img
+            className={css.headerLogo}
+            src={`/img/ARED-LOGO-temp.png`}
+            alt="ARED-LOGO"
+            onClick={() => this.refreshHome()}
+          />
         </div>
         <div className={css.mobileNavigation}>
           <IoMdMenu size={"3rem"} onClick={clickMenu} className={css.burger} />

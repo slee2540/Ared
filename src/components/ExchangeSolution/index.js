@@ -39,8 +39,8 @@ class ExchangeSolution extends Component {
                 EXCHANGE
               </li>
               <li className={css.esFeatureBottom}>
-                초당 최대 1,000 거래를 안정적으로 처리하는 Matching Engine을
-                바탕으로 다양한 Exchange Market 에 적용 가능
+                초당 최대 1,000 건의 거래를 안정적으로 처리하는 Matching
+                Engine을 바탕으로 다양한 Exchange Market 에 적용 가능
               </li>
             </ul>
             <ul className={css.featureUl}>

@@ -19,12 +19,17 @@ class App extends Component {
     super(props);
     this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
     this.choosePage = React.createRef();
+    this.main = React.createRef();
   }
 
   state = {
     pageView: "home",
     isMobile: false
   };
+
+  componentDidMount() {
+    console.log(this.main.current);
+  }
 
   componentWillMount() {
     window.addEventListener("resize", this.updateWindowDimensions);
@@ -55,6 +60,7 @@ class App extends Component {
 
     return (
       <div
+        ref={this.main}
         className={css.wrapper}
         style={
           isDisplay === false ? { visibility: "hidden", height: "0" } : null

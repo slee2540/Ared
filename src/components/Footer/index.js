@@ -14,7 +14,9 @@ class Header extends Component {
               alt="logo"
             />
           </div>
-          <div className={css.footerSub2}>ⓒ ARED Inc. All Right Reserved.</div>
+          <div className={css.footerSub2}>
+            ⓒ 2019 ARED Inc. All Right Reserved.
+          </div>
         </div>
         <div className={css.footerLayout3} />
       </div>
