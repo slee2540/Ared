@@ -34,17 +34,13 @@ class ExchangeSolution extends Component {
                 />
               </li>
               <li className={css.esFeatureMiddle}>
-                High-Performance
-                <br /> Exchange
+                HIGH-PERFORMANCE
+                <br />
+                EXCHANGE
               </li>
               <li className={css.esFeatureBottom}>
-                초당 최대 1,000 거래를 안정적으로 처리하는 <br />
-                <br />
-                Matching Engine을 바탕으로 <br />
-                <br />
-                다양한 Exchange Market 에 적용 가능
-                <br />
-                <br />
+                초당 최대 1,000 거래를 안정적으로 처리하는 Matching Engine을
+                바탕으로 다양한 Exchange Market 에 적용 가능
               </li>
             </ul>
             <ul className={css.featureUl}>
@@ -55,16 +51,14 @@ class ExchangeSolution extends Component {
                   alt="icon_02"
                 />
               </li>
-              <li className={css.esFeatureMiddle}>User-Friendly Interface</li>
+              <li className={css.esFeatureMiddle}>
+                USER-FRIENDLY
+                <br />
+                INTERFACE
+              </li>
               <li className={css.esFeatureBottom}>
-                Single Page Application(SPA) 으로 Interface 구성
-                <br />
-                <br />
-                모든 기능을 페이지 이동 없이 이용 가능한 <br />
-                <br />
-                최적의 UX 환경 제공
-                <br />
-                <br />
+                Single Page Application(SPA) 으로 Interface 구성 모든 기능을
+                페이지 이동 없이 이용 가능한 최적의 UX 환경 제공
               </li>
             </ul>
             <ul className={css.featureUl}>
@@ -75,14 +69,14 @@ class ExchangeSolution extends Component {
                   alt="icon_03"
                 />
               </li>
-              <li className={css.esFeatureMiddle}>Advanced Order Type</li>
+              <li className={css.esFeatureMiddle}>
+                ADVANCED
+                <br />
+                ORDER TYPE
+              </li>
               <li className={css.esFeatureBottom}>
-                전문적인 거래를 원하는 트레이더를 위해
-                <br />
-                <br />
-                Limit, Market, Stop Order 기능 제공
-                <br />
-                <br />
+                전문적인 거래를 원하는 트레이더를 위해 Limit, Market, Stop Order
+                기능 제공
               </li>
             </ul>
           </div>

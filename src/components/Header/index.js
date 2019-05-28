@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 // import cx from "classnames";
 import { Link } from "react-scroll";
-// import { Link as Move } from "react-router-dom";
+// import { Redirect } from "react-router-dom";
 import { IoMdMenu } from "react-icons/io"; //burger모양 작업
 // import Dropdown from "../Dropdown/index";
 import css from "../main.module.css";
@@ -29,16 +29,37 @@ class Header extends Component {
     });
   };
 
+  refreshHome = () => {
+    // const { selectedView } = this.props;
+    // selectedView("test");
+    window.location.reload(false);
+    // this.forceUpdate();
+    // const { selectedView } = this.props;
+    // selectedView("support");
+    // selectedView("home");
+    // this.setState({ isShowNavigation: false });
+    // console.log(this.props);
+    // this.props.history.push(`/`);
+  };
+
   front_pc = () => {
     return (
       <div className={css.headerWrapper}>
         <div className={css.headerLayout1}>
-          <img
-            className={css.headerLogo}
-            src={`/img/ARED-LOGO-temp.png`}
-            alt="ARED-LOGO"
-            onClick={() => this.onChangeClick("home")}
-          />
+          <Link
+            activeClass="active"
+            to="Home"
+            spy={true}
+            smooth={true}
+            duration={500}
+          >
+            <img
+              className={css.headerLogo}
+              src={`/img/ARED-LOGO-temp.png`}
+              alt="ARED-LOGO"
+              // onClick={() => this.refreshHome()}
+            />
+          </Link>
         </div>
 
         <div className={css.headerLayout2}>
@@ -151,13 +172,27 @@ class Header extends Component {
     return (
       <div className={css.headerWrapper}>
         <div className={css.headerLayout1}>
-          <div onClick={() => this.onChangeClick("home")}>
+          {/* <div onClick={() => window.location.reload()}> */}
+          <Link
+            activeClass="active"
+            to="Home"
+            spy={true}
+            smooth={true}
+            duration={500}
+          >
             <img
               className={css.headerLogo}
               src={`/img/ARED-LOGO-temp.png`}
               alt="ARED-LOGO"
+              // onClick={() => this.refreshHome()}
             />
-          </div>
+          </Link>
+          {/* <img
+              className={css.headerLogo}
+              src={`/img/ARED-LOGO-temp.png`}
+              alt="ARED-LOGO"
+            /> */}
+          {/* </div> */}
         </div>
         <div className={css.mobileNavigation}>
           <IoMdMenu size={"3rem"} onClick={clickMenu} className={css.burger} />

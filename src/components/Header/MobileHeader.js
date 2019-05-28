@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-scroll";
-import cx from "classnames";
+// import cx from "classnames";
 import css from "../main.module.css";
 
 // import { IoMdMenu } from "react-icons/io"; //burger모양 작업
@@ -23,7 +23,7 @@ class MobileHeader extends Component {
         <ul className={css.linkItemArea}>
           <Link
             activeClass="active"
-            to="Notice"
+            to="Home"
             spy={true}
             smooth={true}
             duration={500}
@@ -33,7 +33,22 @@ class MobileHeader extends Component {
               className={css.linkItem}
               onClick={() => this.onChangeClick("home")}
             >
-              About
+              HOME
+            </li>
+          </Link>
+          <Link
+            activeClass="active"
+            to="About"
+            spy={true}
+            smooth={true}
+            duration={500}
+            className={css.linkWidth}
+          >
+            <li
+              className={css.linkItem}
+              onClick={() => this.onChangeClick("home")}
+            >
+              ABOUT
             </li>
           </Link>
           <Link
@@ -48,22 +63,7 @@ class MobileHeader extends Component {
               className={css.linkItem}
               onClick={() => this.onChangeClick("home")}
             >
-              Service
-            </li>
-          </Link>
-          <Link
-            activeClass="active"
-            to="ExchangeSolution"
-            spy={true}
-            smooth={true}
-            duration={500}
-            className={css.linkWidth}
-          >
-            <li
-              className={css.subLinkItem}
-              onClick={() => this.onChangeClick("home")}
-            >
-              Exchange Solution
+              EXCHANGE SOLUTION
             </li>
           </Link>
           <Link
@@ -75,10 +75,10 @@ class MobileHeader extends Component {
             className={css.linkWidth}
           >
             <li
-              className={css.subLinkItem}
+              className={css.linkItem}
               onClick={() => this.onChangeClick("home")}
             >
-              Forex Solution
+              FOREX SOLUTION
             </li>
           </Link>
           <Link
@@ -90,13 +90,29 @@ class MobileHeader extends Component {
             className={css.linkWidth}
           >
             <li
-              className={css.subLinkItem}
+              className={css.linkItem}
               onClick={() => this.onChangeClick("home")}
             >
-              Web Platform
+              WEB PLATFORM
             </li>
           </Link>
-          <li
+
+          <Link
+            activeClass="active"
+            to="Contact"
+            spy={true}
+            smooth={true}
+            duration={500}
+            className={css.linkWidth}
+          >
+            <li
+              className={css.linkItem}
+              onClick={() => this.onChangeClick("home")}
+            >
+              CONTACT
+            </li>
+          </Link>
+          {/* <li
             className={css.linkItem}
             onClick={() => this.onChangeClick("notice")}
           >
@@ -113,14 +129,8 @@ class MobileHeader extends Component {
             onClick={() => this.onChangeClick("contacts")}
           >
             Contacts
-          </li>
+          </li> */}
         </ul>
-        {/* <ul className={css.linkItemArea}>
-          
-        </ul>
-        <ul className={css.linkItemArea}>
-          
-        </ul> */}
       </div>
     );
   }

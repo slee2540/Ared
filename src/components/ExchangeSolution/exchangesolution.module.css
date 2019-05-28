@@ -11,6 +11,7 @@
 }
 .esTitle2 {
   font-size: 2rem;
+  font-weight: normal;
   color: #e9e9e9;
   padding-bottom: 2rem;
 }
@@ -28,25 +29,23 @@
   text-align: center;
   font-size: 2rem;
   padding: 2rem 0;
+
   /* padding: 3rem 0rem 5rem 2rem; */
 }
 
 .esFeatureWrapper {
   display: flex;
   flex-direction: row;
-}
-
-.esFeatureUl {
-  flex: 1;
-  /* background: #15191f; */
-  padding: 0 2rem;
-  margin: 0 5rem 0 0rem;
+  justify-content: center;
 }
 
 .featureUl {
-  flex: 1;
+  /* flex: 1;
   padding: 0rem;
-  margin: 0 3rem;
+  margin: 0 3rem; */
+  flex-basis: 250px;
+  margin: 0 2rem;
+  /* border: 1px solid red; */
 }
 
 .featureUlSub {
@@ -67,9 +66,10 @@
 }
 
 .esFeatureMiddle {
-  font-size: 1.71rem;
-  height: 6rem;
-  padding: 1rem 2rem;
+  font-size: 1.3rem;
+  font-weight: normal;
+  height: 5rem;
+  /* padding: 1rem 2rem; */
   text-align: center;
   color: #e9e9e9;
   /* background: #15191f; */
@@ -77,8 +77,10 @@
 
 .esFeatureBottom {
   font-size: 1.1rem;
-  padding: 1rem 2rem;
-  min-height: 12rem;
+  /* padding: 1rem 2rem; */
+  /* min-height: 12rem; */
+  line-height: 250%;
+  word-break: keep-all;
   text-align: center;
   color: #8c8e90;
   font-family: "Nanum Gothic";

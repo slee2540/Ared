@@ -67,6 +67,7 @@ class App extends Component {
           selectedView={selectedView}
         />
         <section>
+          <Element name="Home" className="element" />
           <div className={cx(css.content)}>
             <MainPage />
           </div>
@@ -96,6 +97,8 @@ class App extends Component {
             <WebPlatform />
           </div>
         </section>
+        <Element name="Contact" className="element" />
+        <Contact />
         {/* <section>
           <Element name="Contact" className="element" />
           <div className={css.content}>
@@ -109,37 +112,6 @@ class App extends Component {
 
   render() {
     return this.home(true);
-
-    // const { pageView, isMobile } = this.state;
-    // const { selectedView } = this;
-
-    // if (pageView === "home") {
-    //   return this.home(true);
-    // }
-    // else if (pageView === "notice")
-    //   return (
-    //     <>
-    //       {this.home(false)}
-    //       <NoticePage
-    //         ref={this.choosePage}
-    //         pageView={pageView}
-    //         isMobile={isMobile}
-    //         selectedView={selectedView}
-    //       />
-    //     </>
-    //   );
-    // else if (pageView === "contacts")
-    //   return (
-    //     <>
-    //       {this.home(false)}
-    //       <ContactsPage
-    //         ref={this.choosePage}
-    //         pageView={pageView}
-    //         isMobile={isMobile}
-    //         selectedView={selectedView}
-    //       />
-    //     </>
-    //   );
   }
 }
 

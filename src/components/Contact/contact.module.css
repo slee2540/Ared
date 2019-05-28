@@ -3,6 +3,7 @@
 .contactsWrapper {
   display: flex;
   flex-direction: column;
+  /* background-color: #ffffff; */
 }
 
 .map {
@@ -19,6 +20,12 @@
   color: #333333;
   /* text-align: center; */
   padding: 3rem 0rem;
+}
+
+.contactTitle {
+  font-size: 2rem;
+  text-align: center;
+  padding-bottom: 2rem;
 }
 
 .contactContainer {
@@ -52,5 +59,16 @@
   .contactContainer {
     padding: 0 0rem;
     /* justify-items: center; */
+  }
+
+  .contactImage {
+    flex: 1;
+    text-align: right;
+    padding-left: 0rem;
+  }
+
+  .contactText {
+    flex: 5;
+    padding-left: 3rem;
   }
 }

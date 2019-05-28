@@ -13,6 +13,7 @@
 .contentWrapper {
   display: flex;
   flex-direction: row;
+  background: #ffffff;
 }
 
 .esWrapper {
@@ -22,15 +23,15 @@
   /* height: 100vh; */
 }
 
-/* .fsWrapper {
+.fsWrapper {
   display: flex;
   flex-direction: row;
   background-image: url("/img/map.png");
   background-position: center;
   background-size: cover;
-} */
+}
 
-.fsWrapper {
+/* .fsWrapper {
   position: relative;
   z-index: 5;
 }
@@ -47,7 +48,7 @@
   background-position: center;
   background-size: cover;
   opacity: 0.2;
-}
+} */
 
 .webWrapper {
   display: flex;
@@ -198,6 +199,13 @@
   padding: 10rem 0rem;
 }
 
+.footerflexWrapper2 {
+  /* flex: 4; */
+  flex-basis: 1280px;
+  padding: 0;
+  /* padding: 10rem 0rem; */
+}
+
 .flexWrapper3 {
   flex: 1;
 }
@@ -221,7 +229,7 @@
 .footerLogo {
   flex: 1;
   text-align: right;
-  margin-right: 3rem;
+  /* margin-right: 3rem; */
   margin-top: 2rem;
 }
 
@@ -287,6 +295,7 @@
 .footerSub1 {
   flex: 1;
   text-align: center;
+
   /* justify-items: center;
   justify-content: center;
   align-items: center; */
@@ -297,13 +306,13 @@
   flex: 1;
   /* border-left: 2px solid #2a2f31; */
   text-align: center;
-  padding-right: 3rem;
+  /* padding-right: 3rem; */
   color: #8c8e90;
 }
 
 .footerLogo {
   /* height: 4rem; */
-  height: 5rem;
+  height: 3rem;
 }
 
 .navigationArea {
@@ -336,6 +345,7 @@
 .linkItem {
   padding: 1.5rem 2rem;
   font-size: 1.1rem;
+  font-weight: normal;
   cursor: pointer;
 }
 
@@ -372,6 +382,7 @@
 
   .headerLogo {
     height: 3rem;
+    margin-top: 0.5rem;
   }
 
   .flexWrapper2 {
@@ -390,7 +401,7 @@
   .burger {
     height: 3rem;
     margin-right: 1rem;
-    margin-top: 1rem;
+    margin-top: 1.5rem;
   }
 
   .mainTextSpace2 {

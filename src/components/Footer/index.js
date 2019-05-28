@@ -14,25 +14,7 @@ class Header extends Component {
               alt="logo"
             />
           </div>
-          <div className={css.footerSub2}>
-            (c) ARED All Right Reserved.
-            {/* <div>
-              서울특별시 강남구 삼성동 143-6 영창빌딩 4층
-              <br />
-              <br />
-            </div>
-            <div>
-              Email : support@theared.com
-              <br />
-              <br />
-            </div>
-            <div>
-              ⓒ ARED All right reserved.
-              <br />
-              <br />
-            </div>
-            <div /> */}
-          </div>
+          <div className={css.footerSub2}>ⓒ ARED Inc. All Right Reserved.</div>
         </div>
         <div className={css.footerLayout3} />
       </div>

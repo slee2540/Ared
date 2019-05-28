@@ -32,7 +32,7 @@ class Notice extends Component {
                   <div className={css.aboutText}>EXPERIENCED</div>
                 </li>
                 <li className={css.aboutFeatureMiddle}>
-                  숙련된 fx 트레이더이자 브로커로서 다년간의 fx 경력과 이를 통해
+                  숙련된 FX 트레이더이자 브로커로서 다년간의 FX 경력과 이를 통해
                   축적된 풍부한 노하우를 자랑합니다.
                 </li>
               </ul>
